@@ -20,6 +20,7 @@ if hist_button: # al hacer clic en el botón
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig_1, use_container_width=True)
 
+    st.write('El histograma muestra la frecuencia de vehículos usados según su odometro, segmentado por condición del vehículo')
 
 hist_button = st.button('Construir Gráfico de Dispersión: Odómetro vs. Precio') # crear un botón
      
@@ -33,3 +34,5 @@ if hist_button: # al hacer clic en el botón
     
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig_2, use_container_width=True)
+
+    st.write('El gráfico de dispersión muestra la relación entre el odómetro de cada vehículo y su precio, segmentado por la condición.')
